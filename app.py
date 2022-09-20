@@ -1,3 +1,4 @@
+import uvicorn as uvicorn
 from flask import Flask, render_template as rt, request, make_response
 
 app = Flask(__name__)
@@ -24,6 +25,9 @@ def render_template(page: str):
     # print([x for x in response.headers.keys()])
 
 
+
+if __name__ == '__main__':
+    uvicorn.run(app, port=9990)
 
 
 
