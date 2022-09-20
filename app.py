@@ -1,5 +1,5 @@
 from flask import Flask, render_template as rt, request, make_response
-from waitress import serve
+
 
 app = Flask(__name__)
 
@@ -48,6 +48,3 @@ def index():  # put application's code here
     return response
     # print(lang)
 
-
-if __name__ == '__main__':
-    serve(app, port=9990)

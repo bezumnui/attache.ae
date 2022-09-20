@@ -91,9 +91,17 @@
     align-self: flex-end;
     color: var(--second-color);
 }
+.white-theme {
+    --item1-icon: url(../../static/icons/bcompany_one.svg);
+    --item2-icon: url(../../static/icons/bcompany_two.svg);
+    --item3-icon: url(../../static/icons/bvisa_four.svg);
+    --item4-icon: url(../../static/icons/bvisa_six.svg);
+    --item5-icon: url(../../static/icons/bvisa.svg);
+    --item6-icon: url(../../static/icons/bcert.svg);
+}
 
+.dark-theme {
 
-:root {
     --item1-icon: url("../../static/icons/company_one.svg");
     --item2-icon: url("../../static/icons/company_two.svg");
     --item3-icon: url("../../static/icons/visa_four.svg");
