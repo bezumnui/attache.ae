@@ -109,7 +109,7 @@
 .feat1 .icon,
 .feat2 .icon,
 .feat3 .icon {
-    background-image: url("static/icons/phone.svg");
+    background-image: url("../icons/phone.svg");
 }
 
 .feat2 {

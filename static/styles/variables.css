@@ -4,17 +4,16 @@
     --second-color: #0082ca;
     --main-text-color: white;
     --second-text-color: black;
-    --appear-image: url("static/icons/sun.svg");
-    --language-image: url("static/icons/english.svg");
-    --speed-icon: url("static/icons/speed.svg");
-    --main-bg-color: #2c2c2c;
-    --burger-icon: url("static/icons/burger.svg");
-    --head-logo-image:url("static/images/head_logo.png");
-    --prepair-image: url(static/icons/white-papers.svg);
-    --agency-image: url(static/icons/peoples.svg);
-    --services-image: url(static/icons/tags.svg);
-    --contacts-image: url(static/icons/black-phone.svg);
-    --contacts-image-mobi: url(static/icons/phone.svg);
-    --hotel-image: url(static/images/hotel.webp)
+    --appear-image: url("../../static/icons/sun.svg");
+    --language-image: url("../../static/icons/english.svg");
+    --speed-icon: url("../../static/icons/speed.svg");
+    --burger-icon: url("../../static/icons/burger.svg");
+    --head-logo-image:url("../../static/images/head_logo.png");
+    --prepair-image: url(../../static/icons/white-papers.svg);
+    --agency-image: url(../../static/icons/peoples.svg);
+    --services-image: url(../../static/icons/tags.svg);
+    --contacts-image: url(../../static/icons/black-phone.svg);
+    --contacts-image-mobi: url(../../static/icons/phone.svg);
+    --hotel-image: url(../../static/images/hotel.webp)
  }
  

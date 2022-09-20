@@ -1,7 +1,7 @@
 .main-image {
     position: relative;
     display: flex;
-    background: url("static/images/marina.webp") no-repeat;
+    background: url("../../static/images/marina.webp") no-repeat;
     background-size: cover;
     background-position: center;
     /* background-position: top; */
@@ -94,12 +94,12 @@
 
 
 :root {
-    --item1-icon: url("static/icons/company_one.svg");
-    --item2-icon: url("static/icons/company_two.svg");
-    --item3-icon: url("static/icons/visa_four.svg");
-    --item4-icon: url("static/icons/visa_six.svg");
-    --item5-icon: url("static/icons/visa.svg");
-    --item6-icon: url("static/icons/cert.svg");
+    --item1-icon: url("../../static/icons/company_one.svg");
+    --item2-icon: url("../../static/icons/company_two.svg");
+    --item3-icon: url("../../static/icons/visa_four.svg");
+    --item4-icon: url("../../static/icons/visa_six.svg");
+    --item5-icon: url("../../static/icons/visa.svg");
+    --item6-icon: url("../../static/icons/cert.svg");
 }
 
 .item1 .icon {
