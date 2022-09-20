@@ -4,7 +4,7 @@
 
 
 
-while getopts u: arg
+while getopts u arg
 do
   case arg in
   u) git pull;;

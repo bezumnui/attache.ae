@@ -63,7 +63,7 @@ function onAppear(first) {
     if (first === true) {
         let appear = getCookie("appear");
         if (appear !== "white" && appear !== "black") {
-            appear = "white";  // black one
+            appear = "black";  // black one
         }
         if (appear === "white"){
             nowAppear = "black";
