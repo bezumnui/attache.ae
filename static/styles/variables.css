@@ -1,11 +1,14 @@
 :root {
+    --language-image: url("../../static/icons/english.svg");
+ }
+
+.dark-theme {
     --appear-var: black;
     --main-bg-color: #2c2c2c;
     --second-color: #0082ca;
     --main-text-color: white;
     --second-text-color: black;
     --appear-image: url("../../static/icons/sun.svg");
-    --language-image: url("../../static/icons/english.svg");
     --speed-icon: url("../../static/icons/speed.svg");
     --burger-icon: url("../../static/icons/burger.svg");
     --head-logo-image:url("../../static/images/head_logo.png");
@@ -14,6 +17,37 @@
     --services-image: url(../../static/icons/tags.svg);
     --contacts-image: url(../../static/icons/black-phone.svg);
     --contacts-image-mobi: url(../../static/icons/phone.svg);
-    --hotel-image: url(../../static/images/hotel.webp)
- }
- 
+    --hotel-image: url(../../static/images/hotel.webp);
+    --item1-icon: url(../../static/icons/company_one.svg);
+    --item2-icon: url(../../static/icons/company_two.svg);
+    --item3-icon: url(../../static/icons/visa_four.svg);
+    --item4-icon: url(../../static/icons/visa_six.svg);
+    --item5-icon: url(../../static/icons/visa.svg);
+    --item6-icon: url(../../static/icons/cert.svg);
+}
+
+
+.white-theme {
+    --appear-var: black;
+    --main-bg-color: #edede9;
+    --second-color: #dd8679;
+    --main-text-color: black;
+    --second-text-color: white;
+    --appear-image: url("../../static/icons/moon.svg");
+    --speed-icon: url("../../static/icons/bspeed.svg");
+    --burger-icon: url("../../static/icons/bburger.svg");
+    --head-logo-image:url("../../static/images/bhead_logo.png");
+    --prepair-image: url(../../static/icons/black-papers.svg);
+    --agency-image: url(../../static/icons/peoples.svg);
+    --services-image: url(../../static/icons/black-tags.svg);
+    --contacts-image: url(../../static/icons/phone.svg);
+    --contacts-image-mobi: url(../../static/icons/black-phone.svg);
+    --hotel-image: url(../../static/images/white-hotel.webp);
+    --item1-icon: url(../../static/icons/bcompany_one.svg);
+    --item2-icon: url(../../static/icons/bcompany_two.svg);
+    --item3-icon: url(../../static/icons/bvisa_four.svg);
+    --item4-icon: url(../../static/icons/bvisa_six.svg);
+    --item5-icon: url(../../static/icons/bvisa.svg);
+    --item6-icon: url(../../static/icons/bcert.svg);
+}
+

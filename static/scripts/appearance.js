@@ -81,67 +81,47 @@ function onAppear(first) {
     // --appear-image: url("static/icons/sun.svg");
 
 
-    if (nowAppear == "white") {
+    if (nowAppear === "white") {
 
-        r.style.setProperty("--main-bg-color", "#2c2c2c");
-        r.style.setProperty("--second-color", "#0082ca");
-        r.style.setProperty("--main-text-color", "white");
-        r.style.setProperty("--second-text-color", "black");
-        r.style.setProperty("--appear-image", "url(\"../../static/icons/sun.svg\")");
-        r.style.setProperty("--burger-icon", "url(\"../../static/icons/burger.svg\")");
-        r.style.setProperty("--head-logo-image", "url(\"../../static/images/head_logo.png\")");
-        r.style.setProperty("--speed-icon", "url(\"../../static/icons/speed.svg\")");
-
-        r.style.setProperty("--prepair-image", "url(../../static/icons/white-papers.svg)");
-        r.style.setProperty("--agency-image", "url(../../static/icons/peoples.svg)");
-        r.style.setProperty("--services-image", "url(../../static/icons/tags.svg)");
-        r.style.setProperty("--contacts-image", "url(../../static/icons/black-phone.svg)");
-        r.style.setProperty("--contacts-image-mobi", "url(../../static/icons/phone.svg)");
-
-        r.style.setProperty("--hotel-image", "url(../../static/images/hotel.webp)");
-
-
-        r.style.setProperty("--item1-icon", "url(../../static/icons/company_one.svg)");
-        r.style.setProperty("--item2-icon", "url(../../static/icons/company_two.svg)");
-        r.style.setProperty("--item3-icon", "url(../../static/icons/visa_four.svg)");
-        r.style.setProperty("--item4-icon", "url(../../static/icons/visa_six.svg)");
-        r.style.setProperty("--item5-icon", "url(../../static/icons/visa.svg)");
-        r.style.setProperty("--item6-icon", "url(../../static/icons/cert.svg)");
-  
-
+        // r.style.setProperty("--main-bg-color", "#2c2c2c");
+        // r.style.setProperty("--second-color", "#0082ca");
+        // r.style.setProperty("--main-text-color", "white");
+        // r.style.setProperty("--second-text-color", "black");
+        // r.style.setProperty("--appear-image", "url(\"../../static/icons/sun.svg\")");
+        // r.style.setProperty("--burger-icon", "url(\"../../static/icons/burger.svg\")");
+        // r.style.setProperty("--head-logo-image", "url(\"../../static/images/head_logo.png\")");
+        // r.style.setProperty("--speed-icon", "url(\"../../static/icons/speed.svg\")");
+        //
+        // r.style.setProperty("--prepair-image", "url(../../static/icons/white-papers.svg)");
+        // r.style.setProperty("--agency-image", "url(../../static/icons/peoples.svg)");
+        // r.style.setProperty("--services-image", "url(../../static/icons/tags.svg)");
+        // r.style.setProperty("--contacts-image", "url(../../static/icons/black-phone.svg)");
+        // r.style.setProperty("--contacts-image-mobi", "url(../../static/icons/phone.svg)");
+        //
+        // r.style.setProperty("--hotel-image", "url(../../static/images/hotel.webp)");
+        //
+        //
+        // r.style.setProperty("--item1-icon", "url(../../static/icons/company_one.svg)");
+        // r.style.setProperty("--item2-icon", "url(../../static/icons/company_two.svg)");
+        // r.style.setProperty("--item3-icon", "url(../../static/icons/visa_four.svg)");
+        // r.style.setProperty("--item4-icon", "url(../../static/icons/visa_six.svg)");
+        // r.style.setProperty("--item5-icon", "url(../../static/icons/visa.svg)");
+        // r.style.setProperty("--item6-icon", "url(../../static/icons/cert.svg)");
+        r.classList.toggle("dark-theme");
+        r.classList.remove("white-theme");
         nowAppear = "black";
         setCookie("appear", "black", 10);
 
 
     }
-    else if (nowAppear == "black"){
-        r.style.setProperty("--main-bg-color", "#edede9");
-        r.style.setProperty("--second-color", "#dd8679");
-        r.style.setProperty("--main-text-color", "black");
-        r.style.setProperty("--second-text-color", "white");
-        r.style.setProperty("--appear-image", "url(\"../../static/icons/moon.svg\")");
-        r.style.setProperty("--burger-icon", "url(\"../../static/icons/bburger.svg\")");
-        r.style.setProperty("--head-logo-image", "url(\"../../static/images/bhead_logo.png\")");
-        r.style.setProperty("--speed-icon", "url(\"../../static/icons/bspeed.svg\")");
-
-        r.style.setProperty("--prepair-image", "url(../../static/icons/black-papers.svg)");
-        r.style.setProperty("--agency-image", "url(../../static/icons/black-peoples.svg)");
-        r.style.setProperty("--services-image", "url(../../static/icons/black-tags.svg)");
-        r.style.setProperty("--contacts-image", "url(../../static/icons/phone.svg)");
-        r.style.setProperty("--contacts-image-mobi", "url(../../static/icons/black-phone.svg)");
-        r.style.setProperty("--hotel-image", "url(../../static/images/white-hotel.webp)");
-
-
-        r.style.setProperty("--item1-icon", "url(../../static/icons/bcompany_one.svg)");
-        r.style.setProperty("--item2-icon", "url(../../static/icons/bcompany_two.svg)");
-        r.style.setProperty("--item3-icon", "url(../../static/icons/bvisa_four.svg)");
-        r.style.setProperty("--item4-icon", "url(../../static/icons/bvisa_six.svg)");
-        r.style.setProperty("--item5-icon", "url(../../static/icons/bvisa.svg)");
-        r.style.setProperty("--item6-icon", "url(../../static/icons/bcert.svg)");
-
+    else {
+        r.classList.toggle("white-theme");
+        r.classList.remove("dark-theme");
         nowAppear = "white";
         setCookie("appear", "white", 10);
-
     }
+    //
+    //
+    // }
 }
 onAppear(true);
