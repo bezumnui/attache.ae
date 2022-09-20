@@ -1,7 +1,8 @@
-import uvicorn as uvicorn
 from flask import Flask, render_template as rt, request, make_response
+from waitress import serve
 
 app = Flask(__name__)
+
 
 def render_template(page: str):
     lang = request.cookies.get("lang")
@@ -23,14 +24,6 @@ def render_template(page: str):
     #
     # print(lang)
     # print([x for x in response.headers.keys()])
-
-
-
-if __name__ == '__main__':
-    uvicorn.run(app, port=9990)
-
-
-
 
 
 @app.route('/pricing')
@@ -56,7 +49,5 @@ def hello_world():  # put application's code here
     # print(lang)
 
 
-
-
 if __name__ == '__main__':
-    app.run()
+    serve(app, port=9990)
