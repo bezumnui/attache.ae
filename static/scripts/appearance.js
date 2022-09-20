@@ -20,6 +20,7 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";SameSite=Strict;path=/";
 }
 
+
 function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');

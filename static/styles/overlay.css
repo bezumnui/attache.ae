@@ -162,10 +162,10 @@ header nav ul li a {
 
 }
 .slide-in {
-  animation: display-menu .4s linear 1;
+  animation: display-menu .2s cubic-bezier(.23,1,.37,.94) 1;
 }
 .slide-out {
-    animation: remove-menu 0.4s linear 1;
+    animation: remove-menu 0.2s linear 1;
 }
 @keyframes display-menu {
     0% {
@@ -272,8 +272,12 @@ header nav ul li a {
     .li-contacts {
         background: none;
         border: 2px solid var(--second-color);
+        border-top: none;
         color: var(--main-bg-color);
         border-radius: 0;
+    }
+     #navID ul:nth-child(1){
+        border: 2px solid var(--second-color);
     }
     .li-contacts a {
         color: var(--main-text-color);
@@ -286,13 +290,14 @@ header nav ul li a {
         margin: 0;
         padding: 0;
         width: 100vw;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         
     }
+
+
     header nav ul li {
         margin: 0;
-        padding: 0;
         width: calc(100vw - 4px);
         border: 2px solid var(--second-color);
         border-top: none;
@@ -300,6 +305,7 @@ header nav ul li a {
         align-items: flex-start;
         padding: 25px 0;
     }
+
     header nav ul li .header_icon {
         margin-right: 25px;
     }
@@ -307,11 +313,12 @@ header nav ul li a {
     header {
         position: relative;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     #cross {
         z-index: 2;
+        right: 25px;
         position: fixed;
         width: 22px;
         height: 22px;
