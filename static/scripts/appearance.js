@@ -40,20 +40,20 @@ function setLang(lang_){
     lang.setLang(lang_);
     // --language-image: url("../icons/english.svg");
     let r = document.querySelector(':root');
-    if (lang.getLang() === "ru") {
-        r.style.setProperty("--language-image", "url(../..//icons/russian.svg)");
+    if (lang.getLang() === "en") {
+        r.style.setProperty("--language-image", "url(../icons/russian.svg)");
     }
     else {
-        r.style.setProperty("--language-image", "url(../..//icons/english.svg)");
+        r.style.setProperty("--language-image", "url(../icons/english.svg)");
     }
 }
 
 
 function onLanguage() {
-    if (lang.getLang() == "ru"){
+    if (lang.getLang() === "ru"){
         window.location.replace("https://attache.ae/?l=en");
     }
-    else if (lang.getLang() == "en"){
+    else if (lang.getLang() === "en"){
         window.location.replace("https://attache.ae/?l=ru");
     }
 }

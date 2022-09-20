@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 def render_template(page: str):
     lang = request.cookies.get("lang")
-    print([x for x in request.headers.keys()])
 
     supported_languages = ["en", "ru"]
     if lang is None or lang not in supported_languages:
@@ -31,8 +30,9 @@ def pricing():  # put application's code here
     return render_template("pricing")
 
 
+
 @app.route('/')
-def hello_world():  # put application's code here
+def index():  # put application's code here
     lang = request.args.get("l")
     # print(lang)
     if lang is None:

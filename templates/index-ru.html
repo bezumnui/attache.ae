@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="static/styles/variables.css">
+    <link rel="stylesheet" href="static/styles/overlay.css">
+    <title>Attache</title>
 </head>
 <body>
-    RU
+    <script src="static/scripts/appearance.js"></script>
+    <script src="static/scripts/animations.js"></script>
+    <script>setLang("ru");</script>
+    <div class="overlay">
+        <div class="language" onclick="onLanguage();"></div>
+        <div class="appear" onclick="onAppear();"></div>
+    </div>
+    <div class="header">
+        <header>
+            <div class="header_logo" id="header_logo"></div>
+            <nav id="navID">
+                <ul>
+                    <li>
+                        <div class="header_icon prepair"></div>
+                        <a href="pricing">price</a>
+                    </li>
+
+                    <li>
+                        <div class="header_icon agency"></div>
+                        <a href="#">agency</a>
+                    </li>
+
+                    <li>
+                        <div class="header_icon services"></div>
+                        <a href="#">services</a>
+                    </li>
+
+                    <li class="li-contacts">
+                        <div class="header_icon contacts"></div>
+                        <a href="#">contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cross" id="cross" onclick="onCross();"></div>
+            <div class="burger" id="burger" onclick="onBurger();"></div>
+
+        </header>
+    </div>
+
 </body>
 </html>
