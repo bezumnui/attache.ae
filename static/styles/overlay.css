@@ -102,6 +102,7 @@ header nav ul li a {
     height: 1em;
 }
 
+
 /* --prepair-image: url(static/icons/white-papers.svg);
     --agency-image: url(static/icons/peoples.svg);
     --services-image: url(static/icons/tags.svg);
@@ -156,8 +157,16 @@ header nav ul li a {
     display: none;
 }
 
+#navID {
+    will-change: transform;
 
-
+}
+.slide-in {
+  animation: display-menu .4s linear 1;
+}
+.slide-out {
+    animation: remove-menu 0.4s linear 1;
+}
 @keyframes display-menu {
     0% {
         /* transform: scale(1, .01); */
