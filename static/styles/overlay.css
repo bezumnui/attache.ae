@@ -1,4 +1,8 @@
-
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
+    font-display: swap;
+}
 
 body {
     font-family: 'Comfortaa', cursive;
