@@ -1,0 +1,320 @@
+
+
+body {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    background: var(--main-bg-color);
+    transition: .2s;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    z-index: 1;
+    background: var(--main-bg-color);
+    opacity: .93;
+    border-bottom: 3px solid var(--second-color);   
+    justify-content: center;
+    transition: .2s;
+}
+
+
+header {
+    /* 1020px MAXIMUM! */
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+header nav {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+header li {
+    transition: .05s;
+}
+
+header li:hover{
+    filter: brightness(.8);
+ 
+}
+
+
+.header_logo {
+    background: var(--head-logo-image) no-repeat;
+    background-size: contain;
+    /* background: red; */
+    width: 130px;
+    height: 65px;
+}
+
+header nav ul {
+    width: 45vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.li-contacts {
+    background: var(--main-text-color);
+    border: 7px solid var(--main-text-color);
+    border-radius: 32px;
+    
+}
+
+.li-contacts a {
+    color: var(--second-text-color);
+}
+
+
+header nav ul li a {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.header_icon {
+
+    background: url("https://static.attache.ae/icons/two-peoples.svg") no-repeat;
+    background-size: contain;
+    /* background: red; */
+    width: 1em;
+    height: 1em;
+}
+
+/* --prepair-image: url(static/icons/white-papers.svg);
+    --agency-image: url(static/icons/peoples.svg);
+    --services-image: url(static/icons/tags.svg);
+    --contacts-image: url(static/icons/black-phone.svg); */
+
+.header_icon.contacts {
+    background-image: var(--contacts-image);
+}
+
+.header_icon.services {
+    background-image: var(--services-image);
+}
+
+.header_icon.agency {
+    background-image: var(--agency-image);
+}
+
+
+.header_icon.prepair {
+    background-image: var(--prepair-image);
+
+}
+
+.burger {
+    background: var(--burger-icon);
+    background-position: center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    
+    display: none;
+    
+    
+    
+}
+
+@keyframes burger-anim {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+    
+}
+
+
+
+
+.cross {
+    
+    display: none;
+}
+
+
+
+@keyframes display-menu {
+    0% {
+        /* transform: scale(1, .01); */
+        display: flex;
+        transform: translate(0, -100%);
+    }
+    
+    100% {
+        display: flex;
+        /* transform: scale(1, 1); */
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes remove-menu {
+    0% {
+        /* transform: scale(1, .01); */
+        transform: translate(0, 0%);
+    }
+    
+    100% {
+        /* transform: scale(1, 1); */
+        transform: translate(0, -100%);
+    }
+}
+
+
+#cycleBurger {
+    /* animation-name: burger-anim;
+    animation-duration: .4s; */
+    z-index: 0;
+    
+}
+
+#showNav {
+
+    
+    display: inline-block;
+    
+}
+
+.overlay {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 3;
+    
+}
+.appear {
+    background: var(--main-text-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 32px;
+    background-image: var(--appear-image);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.language {
+    background: var(--main-text-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 32px;
+    background-image: var(--language-image);
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.language:hover,
+.appear:hover {
+    filter: brightness(.8);
+}
+
+
+
+@media (max-width: 980px) {
+    
+    
+
+    .burger {
+        display: block;
+        /* animation-name: burger-anim;
+        animation-duration: .4s; */
+    }
+    
+    header nav {
+        padding-top: 75px;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--main-bg-color);
+        width: 100vw;
+        z-index: 1;
+        height: auto;
+    }
+
+    .li-contacts {
+        background: none;
+        border: 2px solid var(--second-color);
+        color: var(--main-bg-color);
+        border-radius: 0;
+    }
+    .li-contacts a {
+        color: var(--main-text-color);
+    }
+    .header_icon.header_icon.header_icon.contacts {
+        background-image: var(--contacts-image-mobi);
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    header nav ul li {
+        margin: 0;
+        padding: 0;
+        width: calc(100vw - 4px);
+        border: 2px solid var(--second-color);
+        border-top: none;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+    header nav ul li .header_icon {
+        margin-right: 25px;
+    }
+
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #cross {
+        z-index: 2;
+        position: fixed;
+        width: 22px;
+        height: 22px;
+        background: url("https://static.attache.ae/icons/cross.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+  
+    
+    
+}
+
+@media (min-width: 1800px) {
+    header nav ul {
+        width: 33vw;
+    }
+    
+}

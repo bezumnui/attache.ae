@@ -1,0 +1,182 @@
+
+/* 
+ :root {
+    --main-bg-color: #5c64af;
+    --second-color: #3368dc;
+    --main-text-color: #d9eace;
+    --second-text-color: #506d7c;
+    --appear-image: url("static/icons/moon.svg");
+ } */
+
+
+.main-image {
+    position: relative;
+    display: flex;
+    background: var(--hotel-image) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-position: top; */
+    /* padding-bottom: 62.5%; */
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.main-image .content {
+    color: var(--main-text-color);
+    max-width: 40vw;
+}
+
+.header-fill {
+    width: 100vw;
+    height: 80px;
+}
+
+.contain-box {
+    width: 100vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contain {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.features .text {
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction:  column;
+    width: 65%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.features button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0;
+    border-radius: 32px;
+    width: 13em;
+    height: 3em;
+    background-color: var(--second-color);
+    
+}
+
+.features .text span {
+    font-size: 1.5em;
+    font-family: 'Comfortaa', cursive;
+    color: var(--main-text-color);
+}
+
+.features .text .label{
+    font-size: 2.5em;
+    width: 100%;
+
+}
+
+.feat1 .logo,
+.feat2 .logo,
+.feat3 .logo{
+    background-image: var(--speed-icon);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+
+.feat1 .icon,
+.feat2 .icon,
+.feat3 .icon {
+    background-image: url("https://static.attache.ae/icons/phone.svg");
+}
+
+.feat2 {
+    flex-direction: row-reverse;
+    text-align: end;
+    align-content: flex-end;
+}
+.feat2 button {
+    align-self: flex-end;
+}
+
+.features .logo {
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+button {
+    transition: .1s;
+}
+
+button:hover {
+    filter: brightness(.8);
+}
+
+.features .icon {
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+.l2_title {
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .features {
+        flex-direction: column;
+    }
+    .features .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .feat2 .logo {
+        align-self: flex-end;
+
+    }
+
+    .features {
+        width: 80vw;
+        height: max-content;
+    }
+    .features .text {
+        width: 100%;
+       
+    }
+    .features .description {
+        margin: 25px 0;
+    }
+    .main-image .content {
+        max-width: 80vw;
+    }
+}
+
