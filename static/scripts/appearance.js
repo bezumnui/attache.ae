@@ -61,15 +61,14 @@ function onLanguage() {
 
 function onAppear(first) {
     if (first === true) {
-        appear = getCookie("appear");
-        if (appear != "white" && appear != "black") {
-            appear = "black";
-            appear = setCookie("appear", "black", 10);
+        let appear = getCookie("appear");
+        if (appear !== "white" && appear !== "black") {
+            appear = "white";  // black one
         }
-        if (appear == "white"){
+        if (appear === "white"){
             nowAppear = "black";
         }
-        else if (appear == "black") {
+        else if (appear === "black") {
             nowAppear = "white";
         }
 
