@@ -6,48 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/styles/variables.css">
     <link rel="stylesheet" href="static/styles/overlay.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
     <title>Attache</title>
 </head>
 <body>
-    <script src="static/scripts/appearance.js"></script>
-    <script src="static/scripts/animations.js"></script>
-    <script>setLang("ru");</script>
-    <div class="overlay">
-        <div class="language" onclick="onLanguage();"></div>
-        <div class="appear" onclick="onAppear();"></div>
+<script src="static/scripts/appearance.js"></script>
+<script src="static/scripts/animations.js"></script>
+<script>setLang("ru");</script>
+<div class="overlay">
+    <div class="language" onclick="onLanguage();"></div>
+    <div class="appear" onclick="onAppear();"></div>
+</div>
+<div class="header">
+    <header>
+        <div class="header_logo" id="header_logo"></div>
+
+        <nav id="navID">
+            <ul>
+                <li class="li-pricing">
+                    <div class="header_icon pricing"></div>
+                    <span>цены</span>
+                </li>
+
+                <li class="li-agency">
+                    <div class="header_icon agency"></div>
+                    <span>агенство</span>
+                </li>
+
+                <li class="li-services">
+                    <div class="header_icon services"></div>
+                    <span>услуги</span>
+                </li>
+
+                <li class="li-contacts">
+                    <div class="header_icon contacts"></div>
+                    <span>контакты</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="cross" id="cross" onclick="onCross();"></div>
+        <div class="burger" id="burger" onclick="onBurger();"></div>
+
+    </header>
+    <script src="static/scripts/header.js"></script>
+</div>
+
+<div class="main-image">
+    <div class="header-fill"></div>
+    <div class="content">
+        <h1>ATTACHE SOLUTIONS DMCC</h1>
+        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
     </div>
-    <div class="header">
-        <header>
-            <div class="header_logo" id="header_logo"></div>
-            <script src="static/scripts/header.js"></script>
-            <nav id="navID">
-                <ul>
-                    <li>
-                        <div class="header_icon prepair"></div>
-                        <a href="pricing" onclick="onCross(true)">price</a>
-                    </li>
+</div>
 
-                    <li>
-                        <div class="header_icon agency"></div>
-                        <a href="#" onclick="onCross(true)">agency</a>
-                    </li>
+<div class="contain-box">
+    <div class="contain">
+        <div class="l2_title">
+            <h1>Услуги, которые мы предоставляем</h1>
+<!--            <span>dgm;dftogj;ordtnhl;kfrnh;omnofgndsgnogjbdkjgnisbgdsmgb odnjfgjhsdlgkjd</span>-->
+        </div>
 
+        <div class="features feat1">
+            <div class="logo"></div>
+            <div class="text">
+                <div class="label">СТАНДАРТНЫЕ УСЛУГИ</div>
+                <div class="description">
+                    <b>ATTACHE SOLUTIONS DMCC</b> является лицензированным провайдером корпоративных услуг в ОАЭ.
+                    У нас налажены отношения с госрегуляторами и банками, мы хорошо разбираемся в местной специфике и владеем всеми бизнес-инструментами, которые доступны в этой юрисдикции.
+                </div>
+                <label for="flist_1">САМЫЕ ВОСТРЕБОВАННЫЕ УСЛУГИ:</label>
+                <ul id="flist_1" class="flist">
                     <li>
-                        <div class="header_icon services"></div>
-                        <a href="#" onclick="onCross(true)">services</a>
+                        <span>регистрация компаний: FZC, FZE, LLC или IBC</span>
                     </li>
-
-                    <li class="li-contacts">
-                        <div class="header_icon contacts"></div>
-                        <a href="#" onclick="onCross(true)">contacts</a>
+                    <li>
+                        <span>получение лицензий</span>
+                    </li>
+                    <li>
+                        <span>открытие счета</span>
+                    </li>
+                    <li>
+                        <span>получение виз</span>
+                    </li>
+                    <li>
+                        <span>легализация документов</span>
                     </li>
                 </ul>
-            </nav>
-            <div class="cross" id="cross" onclick="onCross();"></div>
-            <div class="burger" id="burger" onclick="onBurger();"></div>
+                <div class="buttons">
+                    <button class="fbutton">
+                    <div class="icon"></div>
+                    <span>Сделать запрос</span>
+                </button>
+                <button class="sbutton">
+                    <div class="icon"></div>
+                    <span>Подробнее</span>
+                </button>
+                </div>
+            </div>
 
-        </header>
+        </div>
+        <div class="features feat2">
+            <div class="logo"></div>
+            <div class="text">
+                <div class="label">УНИКАЛЬНЫЕ УСЛУГИ</div>
+                <div class="description">
+                    Существует много инструментов и сложных организационных конструкций для защиты активов,
+                    оптимизации операционных расходов и улучшения финансовых результатов бизнеса.
+                </div>
+                <label for="flist_2">МЫ ИНДИВИДУАЛЬНО РАЗРАБАТЫВАЕМ И ВЫПОЛНЯЕМ:</label>
+                <ul id="flist_2" class="flist">
+                    <li>
+                        <span>стратегическое планирование</span>
+                    </li>
+                    <li>
+                        <span>составление бизнес-планов</span>
+                    </li>
+                    <li>
+                        <span>внедрение сложных бизнес-моделей</span>
+                    </li>
+                    <li>
+                        <span>операционное сопровождение проекта: бухгалтерское, юридическое и административное</span>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <button class="fbutton">
+                    <div class="icon"></div>
+                    <span>Сделать запрос</span>
+                </button>
+                <button class="sbutton">
+                    <div class="icon"></div>
+                    <span>Подробнее</span>
+                </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="l2_title">
+            <h1>Сравнение с конкурентами</h1>
+        </div>
+        <div class="list">
+            <div class="item item1">
+                    <div class="icon"></div>
+
+                    <div class="title">НИЗКАЯ СТОИМОСТЬ<br><br>Наше ценообразование ориентировано на объем. В интересах объема
+                        стоимость наших услуг снижена до минимума. Также, компания имеет лицензии рег-агента в RAK ICC и
+                        Ajman Offshore. Это значит, что вы получите IBC в ОАЭ из первых рук.</div>
+
+            </div>
+            <div class="item item2">
+                    <div class="icon"></div>
+                <div class="title">КОРОТКИЕ СРОКИ<br><br>Наш офис находится в деловом центре Дубая. Благодаря близкому
+                    расположению и налаженным отношениям с гос. регуляторами и финансовыми учреждениями, сроки по
+                    регистрации, получению виз и открытию счетов у нас минимальные.</div>
+            </div>
+
+            <div class="item item3">
+                    <div class="icon"></div>
+                <div class="title">ПРОЗРАЧНАЯ КАЛЬКУЛЯЦИЯ<br><br>Мы дорожим вашим доверием, поэтому предоставляем
+                    детальную и правдивую информацию по любой услуге или проекту, в которой показываем перечень и
+                    себестоимость всех составляющих, и отдельно стоимость своей работы.</div>
+            </div>
+        </div>
     </div>
+
+</div>
+
 
 </body>
 </html>

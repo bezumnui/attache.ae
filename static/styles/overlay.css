@@ -83,12 +83,12 @@ header nav ul li {
     
 }
 
-.li-contacts a {
+.li-contacts span {
     color: var(--second-text-color);
 }
 
 
-header nav ul li a {
+header nav ul li span {
     font-family: 'Comfortaa', cursive;
     font-size: 0.9em;
     text-align: center;
@@ -107,7 +107,7 @@ header nav ul li a {
 }
 
 
-/* --prepair-image: url(static/icons/white-papers.svg);
+/* --pricing-image: url(static/icons/white-papers.svg);
     --agency-image: url(static/icons/peoples.svg);
     --services-image: url(static/icons/tags.svg);
     --contacts-image: url(static/icons/black-phone.svg); */
@@ -125,8 +125,8 @@ header nav ul li a {
 }
 
 
-.header_icon.prepair {
-    background-image: var(--prepair-image);
+.header_icon.pricing {
+    background-image: var(--pricing-image);
 
 }
 
@@ -283,7 +283,7 @@ header nav ul li a {
      #navID ul:nth-child(1){
         border: 2px solid var(--second-color);
     }
-    .li-contacts a {
+    .li-contacts span {
         color: var(--main-text-color);
     }
     .header_icon.header_icon.header_icon.contacts {

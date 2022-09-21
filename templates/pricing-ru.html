@@ -23,27 +23,27 @@
     <div class="header">
         <header>
             <div class="header_logo" id="header_logo"></div>
-            <script src="static/scripts/header.js"></script>
+
             <nav id="navID">
                 <ul>
-                    <li>
-                        <div class="header_icon prepair"></div>
-                        <a href="pricing" onclick="onCross(true)">цены</a>
+                    <li class="li-pricing">
+                        <div class="header_icon pricing"></div>
+                        <span>цены</span>
                     </li>
 
-                    <li>
+                    <li class="li-agency">
                         <div class="header_icon agency"></div>
-                        <a href="#" onclick="onCross(true)">агенство</a>
+                        <span>агенство</span>
                     </li>
 
-                    <li>
+                    <li class="li-services">
                         <div class="header_icon services"></div>
-                        <a href="#" onclick="onCross(true)">услуги</a>
+                        <span>услуги</span>
                     </li>
 
                     <li class="li-contacts">
                         <div class="header_icon contacts"></div>
-                        <a href="#" onclick="onCross(true)">контакты</a>
+                        <span>контакты</span>
                     </li>
                 </ul>
             </nav>
@@ -51,6 +51,7 @@
             <div class="burger" id="burger" onclick="onBurger();"></div>
 
         </header>
+        <script src="static/scripts/header.js"></script>
     </div>
     <div class="main-image">
         <div class="header-fill"></div>

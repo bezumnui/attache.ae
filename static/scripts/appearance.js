@@ -26,10 +26,10 @@ function getCookie(cname) {
     let ca = document.cookie.split(';');
     for(let i = 0; i < ca.length; i++) {
         let c = ca[i];
-        while (c.charAt(0) == ' ') {
+        while (c.charAt(0) === ' ') {
             c = c.substring(1);
         }
-        if (c.indexOf(name) == 0) {
+        if (c.indexOf(name) === 0) {
             return c.substring(name.length, c.length);
         }
     }
@@ -92,7 +92,7 @@ function onAppear(first) {
         // r.style.setProperty("--head-logo-image", "url(\"../../static/images/head_logo.png\")");
         // r.style.setProperty("--speed-icon", "url(\"../../static/icons/speed.svg\")");
         //
-        // r.style.setProperty("--prepair-image", "url(../../static/icons/white-papers.svg)");
+        // r.style.setProperty("--pricing-image", "url(../../static/icons/white-papers.svg)");
         // r.style.setProperty("--agency-image", "url(../../static/icons/peoples.svg)");
         // r.style.setProperty("--services-image", "url(../../static/icons/tags.svg)");
         // r.style.setProperty("--contacts-image", "url(../../static/icons/black-phone.svg)");

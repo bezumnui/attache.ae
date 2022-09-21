@@ -1,3 +1,4 @@
+"""Project means that you have already made the path for domain/static/ in nginx or other system"""
 from flask import Flask, render_template as rt, request, make_response
 
 
@@ -47,4 +48,5 @@ def index():  # put application's code here
         response.set_cookie("lang", "en", samesite="Strict")
     return response
     # print(lang)
+
 

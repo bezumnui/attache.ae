@@ -12,7 +12,7 @@
     --speed-icon: url("../../static/icons/speed.svg");
     --burger-icon: url("../../static/icons/burger.svg");
     --head-logo-image:url("../../static/images/head_logo.png");
-    --prepair-image: url(../../static/icons/white-papers.svg);
+    --pricing-image: url(../../static/icons/white-papers.svg);
     --agency-image: url(../../static/icons/peoples.svg);
     --services-image: url(../../static/icons/tags.svg);
     --contacts-image: url(../../static/icons/black-phone.svg);
@@ -31,7 +31,7 @@
     --speed-icon: url("../../static/icons/bspeed.svg");
     --burger-icon: url("../../static/icons/bburger.svg");
     --head-logo-image:url("../../static/images/bhead_logo.png");
-    --prepair-image: url(../../static/icons/black-papers.svg);
+    --pricing-image: url(../../static/icons/black-papers.svg);
     --agency-image: url(../../static/icons/black-peoples.svg);
     --services-image: url(../../static/icons/black-tags.svg);
     --contacts-image: url(../../static/icons/phone.svg);

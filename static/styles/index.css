@@ -18,7 +18,6 @@
     background-position: center;
     /* background-position: top; */
     /* padding-bottom: 62.5%; */
-    width: 100vw;
     height: 50vh;
     overflow: hidden;
     flex-direction: column;
@@ -39,7 +38,6 @@
 }
 
 .contain-box {
-    width: 100vw;
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -74,50 +72,104 @@
     align-items: flex-start;
 }
 
+.features .text label {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.features .buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 34em;
+    justify-content: space-between;
+}
+
 .features button {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 0;
     border-radius: 32px;
-    width: 13em;
+    width: 20em;
     height: 3em;
-    background-color: var(--second-color);
     
 }
+
+.features .fbutton {
+    text-transform: uppercase;
+    background-color: var(--second-color);
+    color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
+
+}
+.features .sbutton {
+    text-transform: uppercase;
+
+    background-color: var(--main-bg-color);
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+}
+
+
 
 .features .text span {
     font-size: 1.5em;
     font-family: 'Comfortaa', cursive;
-    color: var(--main-text-color);
+
+}
+.white-theme {
+    --mail-icon: url("../icons/mail.svg");
+    --ask-icon: url("../icons/bask.svg");
+    --diamond-icon: url("../icons/bdiamond.svg");
+}
+
+.dark-theme {
+    --mail-icon: url("../icons/bmail.svg");
+    --ask-icon: url("../icons/ask.svg");
+    --diamond-icon: url("../icons/diamond.svg");
+
+}
+
+.features .fbutton .icon {
+    background-image: var(--mail-icon);
+    background-repeat: no-repeat;
+}
+
+.features .sbutton .icon {
+    background-image: var(--ask-icon);
+    background-repeat: no-repeat;
+}
+.features li {
+    padding-top: 5px;
 }
 
 .features .text .label{
     font-size: 2.5em;
     width: 100%;
-
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
-.feat1 .logo,
-.feat2 .logo,
-.feat3 .logo{
+.feat1 .logo{
     background-image: var(--speed-icon);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+.feat2 .logo{
+    background-image: var(--diamond-icon);
     background-repeat: no-repeat;
     /* background-position: center; */
 }
 
 
-.feat1 .icon,
-.feat2 .icon,
-.feat3 .icon {
-    background-image: url("../icons/phone.svg");
-}
 
-.feat2 {
-    flex-direction: row-reverse;
-    text-align: end;
-    align-content: flex-end;
-}
+
+/*.feat2 {*/
+/*    flex-direction: row-reverse;*/
+/*    text-align: end;*/
+/*    align-content: flex-end;*/
+/*}*/
 .feat2 button {
     align-self: flex-end;
 }
@@ -134,7 +186,7 @@ button {
 }
 
 button:hover {
-    filter: brightness(.8);
+    filter: invert();
 }
 
 .features .icon {
@@ -149,8 +201,91 @@ button:hover {
     text-align: center;
 }
 
+.contain .list {
+    display: grid;
+    gap: 50px;
+    width: 130%;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 92%;
+    height: 350px;
+}
 
 
+.item .icon {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 110px;
+    margin-bottom: 25px;
+
+}
+.item .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.item .title {
+    flex: 1 1 auto;
+}
+.item .price {
+    align-self: flex-end;
+    color: var(--second-color);
+}
+.white-theme {
+    --dollar-icon: url(../../static/icons/bdollar.svg);
+    --calc-icon: url(../../static/icons/bcalculator.svg);
+
+}
+
+.dark-theme {
+    --dollar-icon: url(../../static/icons/dollar.svg);
+    --calc-icon: url(../../static/icons/calculator.svg);
+}
+
+.item1 .icon {
+    background-image: var(--dollar-icon);
+    width: 90px;
+}
+.item2 .icon {
+    width: 90px;
+    /* height: 80px; */
+    background-image: var(--speed-icon);
+}
+.item3 .icon {
+    width: 90px;
+    background-image: var(--calc-icon);
+}
+.item4 .icon {
+    width: 90px;
+    background-image: var(--item4-icon);
+}
+.item5 .icon {
+    background-image: var(--item5-icon);
+}
+.item6 .icon {
+    width: 82px;
+    background-image: var(--item6-icon);
+}
+
+
+@media (max-width: 1100px) {
+    .content .list {
+        grid-template-columns: 1fr 1fr;
+        width: 88%;
+    }
+
+}
 
 @media (max-width: 900px) {
     .features {
@@ -180,4 +315,6 @@ button:hover {
         max-width: 80vw;
     }
 }
+
+
 
