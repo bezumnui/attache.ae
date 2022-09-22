@@ -12,5 +12,7 @@ do
   esac
 done
 
-gunicorn 'app:app' -w 10 -b localhost:9990
+echo "starting application at adderss: http://localhost:9990"
+gunicorn 'app:app' -w 10 -b localhost:9990 --log-level error
+
 

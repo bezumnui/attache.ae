@@ -6,7 +6,6 @@
     background-position: center;
     /* background-position: top; */
     /* padding-bottom: 62.5%; */
-    width: 100vw;
     height: 50vh;
     overflow: hidden;
     flex-direction: column;
@@ -18,7 +17,6 @@
 
 .main-image .content {
     color: white;
-    max-width: 100vw;
 }
 
 .main-image .content h1 {
@@ -36,18 +34,19 @@
 .content {
     margin: 20px 0;
     display: flex;
-    width: 100vw;
     color: var(--main-text-color);
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
+footer {
+    padding: 50px
+}
 .content .head {
     text-align: center;
     margin-bottom: 50px;
     max-width: 80%;
-    font-size: 10px;
+    font-size: 18px;
 }
 
 .content .list {
@@ -86,6 +85,7 @@
 }
 .item .title {
     flex: 1 1 auto;
+    font-size: 18px;
 }
 .item .price {
     align-self: flex-end;
@@ -141,4 +141,9 @@
         width: 88%;    
     }
 
+}
+@media (min-width: 1320px) {
+    .content {
+        font-size: 28px;
+    }
 }

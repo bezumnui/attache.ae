@@ -1,0 +1,178 @@
+/*
+ :root {
+    --main-bg-color: #5c64af;
+    --second-color: #3368dc;
+    --main-text-color: #d9eace;
+    --second-text-color: #506d7c;
+    --appear-image: url("static/icons/moon.svg");
+ } */
+
+
+.main-image {
+    position: relative;
+    display: flex;
+    background: var(--hotel-image) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.main-image .content {
+    color: var(--main-text-color);
+    max-width: 65vw;
+}
+
+
+.header-fill {
+    width: 100vw;
+    height: 80px;
+}
+
+.contain-box {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contain {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.l2_title {
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.contain .list {
+    display: grid;
+    gap: 50px;
+    width: 130%;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 92%;
+    height: auto;
+    color: var(--main-text-color);
+    padding: 30px;
+    border: 1px solid var(--second-color)
+}
+
+
+
+.item .title {
+    flex: 1 1 auto;
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 30px;
+
+}
+.item .description {
+    font-size: 28px;
+
+}
+
+.item {
+    position: relative;
+}
+
+.item .split {
+    color: var(--second-color);
+    background: var(--second-color);
+    width: 80%;
+    max-width: 200px;
+    height: 2px;
+    /*margin-bottom: 30px;*/
+    top: 80px;
+    position: absolute;
+}
+
+
+.item .price {
+    align-self: flex-end;
+    color: var(--second-color);
+}
+
+footer {
+    padding: 50px
+}
+
+.block {
+    padding-top: 100px;
+    color: var(--main-text-color);
+}
+.block .title {
+    color: var(--second-color);
+    padding-bottom: 30px;
+    font-size: 32px;
+}
+.block .description {
+    font-size: 28px;
+
+}
+
+
+@media (max-width: 1280px) {
+    .l2_title {
+        font-size: 12px;
+    }
+    .contain {
+        width: 80%;
+    }
+
+    .features .description {
+        font-size: 24px;
+    }
+
+    .item {
+        align-self: center;
+        text-align: center;
+        width: 77%;
+    }
+    .item .description {
+        font-size: 18px;
+    }
+    .block .description {
+                font-size: 18px;
+
+    }
+
+
+    .contain .list {
+        grid-template-columns: 1fr;
+        width: 130%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .item .title {
+        width: 90%;
+    }
+
+
+}
+
+@media (min-width: 1320px) {
+    .content {
+        font-size: 28px;
+    }
+}

@@ -37,6 +37,8 @@ function getCookie(cname) {
 }
 
 
+
+
 function setLang(lang_){
     lang.setLang(lang_);
     // --language-image: url("../icons/english.svg");

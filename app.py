@@ -1,7 +1,6 @@
 """Project means that you have already made the path for domain/static/ in nginx or other system"""
 from flask import Flask, render_template as rt, request, make_response
 
-
 app = Flask(__name__)
 
 
@@ -25,11 +24,22 @@ def render_template(page: str):
     # print(lang)
     # print([x for x in response.headers.keys()])
 
+@app.route('/contact')
+def contact():  # put application's code here
+    return render_template("contact")
 
 @app.route('/pricing')
 def pricing():  # put application's code here
     return render_template("pricing")
 
+@app.route('/unique')
+def unique():  # put application's code here
+    return render_template("unique")
+
+
+@app.route("/standard-services")
+def standard_services():
+    return render_template("standard-services")
 
 
 @app.route('/')
@@ -48,5 +58,3 @@ def index():  # put application's code here
         response.set_cookie("lang", "en", samesite="Strict")
     return response
     # print(lang)
-
-

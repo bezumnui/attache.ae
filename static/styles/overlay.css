@@ -61,6 +61,7 @@ header li:hover{
 
 header nav ul {
     width: 45vw;
+    min-width: 800px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -70,10 +71,12 @@ header nav ul {
 header nav ul li {
     margin-left: 10px;
     width: 100%;
+    max-width: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .li-contacts {
@@ -254,7 +257,10 @@ header nav ul li span {
 @media (max-width: 980px) {
     
     
-
+    #navID li {
+        /*width: 100vw;*/
+        max-width: none;
+    }
     .burger {
         display: block;
         /* animation-name: burger-anim;
@@ -291,6 +297,7 @@ header nav ul li span {
     }
 
     header nav ul {
+        min-width: auto;
         margin: 0;
         padding: 0;
         width: 100vw;

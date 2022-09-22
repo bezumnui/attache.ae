@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/variables.css">
+    <link rel="stylesheet" href="static/styles/overlay.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="icon" type="image/x-icon" href="static/icons/favicon.ico">
+    <title>Attache</title>
+</head>
+<body>
+<script src="static/scripts/appearance.js"></script>
+<script src="static/scripts/animations.js"></script>
+<script>setLang("ru");</script>
+<div class="overlay">
+    <div class="language" onclick="onLanguage();"></div>
+    <div class="appear" onclick="onAppear();"></div>
+</div>
+<div class="header">
+    <header>
+        <div class="header_logo" id="header_logo"></div>
+
+        <nav id="navID">
+            <ul>
+                <li class="li-pricing">
+                    <div class="header_icon pricing"></div>
+                    <span>цены</span>
+                </li>
+
+                <li class="li-agency">
+                    <div class="header_icon agency"></div>
+                    <span>стандартные услуги</span>
+                </li>
+
+                <li class="li-services">
+                    <div class="header_icon services"></div>
+                    <span>уникальные услуги</span>
+                </li>
+
+                <li class="li-contacts">
+                    <div class="header_icon contacts"></div>
+                    <span>контакты</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="cross" id="cross" onclick="onCross();"></div>
+        <div class="burger" id="burger" onclick="onBurger();"></div>
+
+    </header>
+    <script src="static/scripts/header.js"></script>
+</div>
+
+<div class="main-image">
+    <div class="header-fill"></div>
+    <div class="content">
+        <h1>Контакты</h1>
+        <span>Мы свяжемся с вами в ближайшее время</span>
+    </div>
+</div>
+
+<div class="contain-box">
+    <style>
+        .l2_title span {
+            display: block;
+            padding: 10px 0;
+        }
+
+    </style>
+    <div class="contain">
+        <span class="l2_title">
+            <h1>Почта</h1>
+            <span>info@attache.ae</span>
+
+            <h1>Телефон</h1>
+                <span>+38 (063) 735 4403 - Украина</span>
+                <span>+971 (58) 533 8770 - ОАЭ - вне ОАЭ</span>
+                <span>058 533 8770 - ОАЭ - внутри ОАЭ</span>
+        </span>
+
+    </div>
+</div>
+
+
+</body>
+</html>

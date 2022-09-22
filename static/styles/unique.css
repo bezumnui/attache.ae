@@ -1,0 +1,117 @@
+/*
+ :root {
+    --main-bg-color: #5c64af;
+    --second-color: #3368dc;
+    --main-text-color: #d9eace;
+    --second-text-color: #506d7c;
+    --appear-image: url("static/icons/moon.svg");
+ } */
+
+
+.main-image {
+    position: relative;
+    display: flex;
+    background: var(--hotel-image) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.main-image .content {
+    color: var(--main-text-color);
+    max-width: 65vw;
+}
+
+.header-fill {
+    width: 100vw;
+    height: 80px;
+}
+.contain li {
+    padding: 10px 0;
+}
+.contain .num {
+    list-style-type: decimal;
+}
+
+.contain-box {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contain {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.l2_title {
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+footer {
+    padding: 50px
+}
+
+.block {
+    padding-top: 100px;
+    color: var(--main-text-color);
+}
+.block .title {
+    color: var(--second-color);
+    padding-bottom: 30px;
+    font-size: 32px;
+}
+.block .description {
+    font-size: 28px;
+
+}
+
+
+@media (max-width: 1280px) {
+    .contain {
+        width: 80%;
+    }
+
+    .features .description {
+        font-size: 24px;
+    }
+
+    .item {
+        align-self: center;
+        text-align: center;
+        width: 77%;
+    }
+
+
+    .contain .list {
+        grid-template-columns: 1fr;
+        width: 130%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .item .title {
+        width: 90%;
+    }
+
+
+}
+
+@media (min-width: 1320px) {
+    .content {
+        font-size: 28px;
+    }
+}
