@@ -115,3 +115,9 @@ footer {
         font-size: 28px;
     }
 }
+
+@media (min-width: 900px) {
+    .content {
+        font-size: 23px;
+    }
+}

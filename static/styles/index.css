@@ -327,6 +327,7 @@ footer {
         height: 50px;
     }
 
+
     .features {
         width: 80vw;
         height: max-content;
@@ -335,6 +336,9 @@ footer {
     .features .text {
         width: 100%;
 
+    }
+    .features .text .label {
+        font-size: 2em;
     }
 
     .features .description {
